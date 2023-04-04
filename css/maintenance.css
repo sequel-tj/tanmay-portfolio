@@ -1,0 +1,42 @@
+#under-construction {
+    width: 300px;
+    height: 200px;
+    background-color: aliceblue;
+    position: fixed;
+    z-index: 1;
+    left: 10px;
+    bottom: 10px;
+    border-radius: 15px;
+    opacity: 0;
+    animation: maint 2s ease-out forwards;
+}
+
+.construction-container {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+@keyframes maint {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.construction-container img {
+    width: 250px;
+    height: auto
+}

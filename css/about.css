@@ -1,0 +1,77 @@
+.about{
+    background-color: black;
+    color: azure;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 600px;
+    margin: auto;
+}
+
+#about{
+   font-size: 4.5rem;
+   text-align: center;
+   width: 100%;
+   color: white;
+   margin-bottom: 20px; 
+}
+
+
+.tnmyImage{
+    max-width: 400px;
+    width: 30%;
+    min-width: 200px;
+    box-shadow: 5px 5px 25px gray;
+    border-radius: 50%;
+}
+
+
+.aboutContainer {
+    position: relative;
+    width: 65%;
+    min-height: 200px;
+    height: 600px;
+}
+
+.objective-container {
+    width: 80%;
+    font-size: 30px;
+    margin: 0 auto 0 auto;
+}
+
+.objective {
+    padding: 20px 0 5px 0px;
+    text-decoration: underline;
+}
+
+.objective-desc {
+    width: 90%;
+    font-size: 22px;
+    text-align: center;
+    margin: auto;
+}
+
+.rotate {
+    transform: rotateX(-180deg);
+    /* animation: rotation 1s linear infinite; */
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateY(45deg);
+    }
+
+    to {
+        transform: rotateY(225deg);
+    }
+}
