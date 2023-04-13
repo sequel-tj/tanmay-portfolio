@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tanmay's Portfolio</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/particle.css">
     <link rel="stylesheet" href="./css/particleInfo.css">
@@ -14,18 +17,21 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/maintenance.css">
 
+    <!-- css animations -->
+    <link rel="stylesheet" href="./animations/blink.css">
+    <link rel="stylesheet" href="./animations/showOnScroll.css">
+
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/education.css">
     <link rel="stylesheet" href="./css/skills.css">
 
 </head>
 
-<body style="font-family: 'Poppins', sans-serif; scroll-behavior: smooth; background-color: gray;">
+<body>
 
     <section id="navbar">
         <div class="navbar">
@@ -37,13 +43,13 @@
         </div>
     </section>
 
-    <section id="home" class="particle-container ">
+    <section id="home" class="particle-container">
         <!-- particles.js container -->
         <div id="particles-js"></div>
 
-        <div class="info">
-            <h1><span class="im-color">I'm</span> <span class="tnmy-color">Tanmay</span></h1>
-            <h3>a &nbsp;<span class="fullstack-color">Full Stack </span> <span class="dev-color">&nbsp; Developer &nbsp;</span>&nbsp;<span class="blink">|</span></h3>
+        <div class="particle-info particle-will-fadeIn">
+            <h1 ><span class="im-color">Hi! I'm</span> <span class="tnmy-color">Tanmay</span></h1>
+            <h3 >a &nbsp;<span class="fullstack-color">Full Stack </span> <span class="dev-color">&nbsp; Developer &nbsp;</span>&nbsp;<span class="particle-blink">&nbsp;</span></h3>
             <!-- <h3>a <span class="auto-type ">Software Developer </span></h3> -->
         </div>
     </section>
@@ -51,9 +57,9 @@
 
     <section id="aboutMe" class="about">
         <div class="aboutContent">
-            <img class="tnmyImage" src="./img/aboutImg/tnmyImage.png" alt="tnmy Pic">
-            <div class="aboutContainer">
-                <h1 id="about">So, who am I<span class="blink rotate">?</span></h1>
+            <img class="tnmyImage will-fadeIn" src="./img/aboutImg/tnmyImage.png" alt="tnmy Pic">
+            <div class="aboutContainer will-fadeIn">
+                <h1 id="about">So, <br>who am I<span class="blink">?</span></h1>
                 <div class="objective-container">
                     <p class="about-desc">
                         Currently, I'm pursuing B.Tech in Computer Science Engineering at 
@@ -69,10 +75,17 @@
     </section>
 <!-- <hr> -->
 
-    <section id="myEducation" class="EducationSection" onmouseenter="svghover()" onmouseleave="svghoverrem">
+    <section id="myEducation" class="EducationSection"  onclick="svghover()" ondblclick="svghoverrem()">
         <div class="education-container">
             <div class="ContentEducation">
                 <h1 id="EducationTitle">EDUCATION</h1>
+            </div>
+
+            <div class="howToSvgEdu">
+                <h2>How to Play </h2>
+                <hr style="margin-bottom: 10px;">
+                <h3>single click - starts the car</h3>
+                <h3>double click - reset</h3>
             </div>
             
             <div class="svgCarEdu">
@@ -177,34 +190,58 @@
             <div class="education school10">
                 <h1>Class 10<sup>th</sup></h1>
                 <hr>
-                <p id="tenthDetails">
-                    CGPA - 9.0<br>
-                    Passing Year - 2017<br>
-                    Board - CBSE<br>
-                    School - ST Francis School, Anpara
-                </p>
+                <div class="education-details">
+                    <p id="tenthDetails">
+                        <strong>CGPA</strong> - 9.0
+                    </p>
+                    <p id="tenthDetails">
+                        <strong>Passing Year</strong> - 2017
+                    </p>
+                    <p id="tenthDetails">
+                        <strong>Board</strong>  - CBSE
+                    </p>
+                    <p id="tenthDetails">
+                        <strong>School</strong>  - ST Francis School, Anpara
+                    </p>
+                </div>
             </div>
             
             <div class="education school12">
                 <h1>Class 12<sup>th</sup></h1>
                 <hr>
-                <p id="twelthDetails">
-                    Percentage - 81.20%<br>
-                    Passing Year - 2019<br>
-                    Board - CBSE<br>
-                    School - ST Francis School, Anpara
-                </p>
+                <div class="education-details">
+                    <p id="twelthDetails">
+                        <strong>Percentage</strong> - 81.20%
+                    </p>
+                    <p id="twelthDetails">
+                        <strong>Passing Year</strong> - 2019
+                    </p>
+                    <p id="twelthDetails">
+                        <strong>Board</strong> - CBSE
+                    </p>
+                    <p id="twelthDetails">
+                        <strong>School</strong> - ST Francis School, Anpara
+                    </p>
+                </div>
             </div>
             
-            <div class="clg">
+            <div class="education clg">
                 <h1>B.Tech</h1>
                 <hr>
-                <p id="B.techDetails">
-                    Current CGPA - 9.42<br>
-                    Passing Year - 2024<br>
-                    Branch - Computer Science Engineer<br>
-                    College - SRM Institute of Science & <br>Technology, Delhi-NCR Campus
-                </p>
+                <div class="education-details">
+                    <p id="B.techDetails">
+                        <strong>Current CGPA </strong>- 9.42 (till 5<sup>th</sup> sem)
+                    </p>
+                    <p id="B.techDetails">
+                        <strong>Passing Year </strong> - 2024
+                    </p>
+                    <p id="B.techDetails">
+                        <strong>Branch</strong> - Computer Science Engineering
+                    </p>
+                    <p id="B.techDetails">
+                        <strong>College</strong> - SRM Institute of Science & <br>Technology, Delhi-NCR Campus
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -347,11 +384,12 @@
     </section>
 <!-- <hr> -->
 
-    <section id="contactMe" class="contactForm">
+    <section id="contactMe" class="contactForm-container">
         <div class="getInTouch">
             <h1 id="Title">Get In Touch</h1>
         </div>
-
+        
+        <!-- <div class="contactform"> -->
         <form onsubmit="sendEmail(); reset(); return false;">
             <!-- <h3>Bonjour!</h3> -->
             <input type="text" id="name" placeholder="Your Name" required>
@@ -360,14 +398,14 @@
             <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
             <button type="submit"> Send </button>
         </form>
-        </div>
+        <!-- </div> -->
     </section>
 
 <hr>
     <section id="contacts">
         <div class="contacts">
             <div class="contactFirstColumn">
-                <h2 id="DeepakPort">
+                <h2 id="tnmyPort">
                     Tanmay's Portfolio
                 </h2>
                 <br>
@@ -399,21 +437,24 @@
         <footer>Copyright © 2023 Tanmay | All rights reserved.</footer>
     </section>
 
-    <!-- <section id="under-construction">
+    <section id="under-construction">
         <div class="construction-container">
-            <img src="./img/maintenance.jpg" alt="construction-img">
+            <img src="./img/underProgress.svg" alt="construction-img">
+            <a href="https://www.freepik.com">image credit: @Freepik</a>
         </div>
-    </section> -->
+    </section>
 
 
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-    <script src="./js/particles.min.js"></script>
-    <script src="./js/particle.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <!-- <script src="./js/typed.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/showOnScroll.js"></script>
+    <script src="./js/particles.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/particle.js"></script>
     <script src="./js/education.js"></script>
     <script src="./js/skills.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./js/contact.js"></script>
 </body>
 </body>

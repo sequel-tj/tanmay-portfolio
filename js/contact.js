@@ -13,11 +13,11 @@ function sendEmail() {
         Host: "smtp.elasticemail.com",
         Username: "spycaptain10@gmail.com",
         Password: "82235BCF18195C010447D379B2060EF497DB",
-        To: 'spycaptain7@gmail.com',
+        To: 'tanmayjaiswal31102002@gmail.com',
         From: "spycaptain10@gmail.com",
         Subject: "This is the subject",
         Body: desc
     })
-    .then(message => alert(message))
-    .catch(err => console.log(err));
+    // .then(message => alert(message))
+    // .catch(err => console.log(err));
 }

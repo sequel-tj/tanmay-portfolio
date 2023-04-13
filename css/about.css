@@ -14,25 +14,32 @@
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    height: 600px;
+    height: 80%;
     margin: auto;
 }
 
 #about{
-   font-size: 4.5rem;
-   text-align: center;
-   width: 100%;
-   color: white;
-   margin-bottom: 20px; 
+    text-align: center;
+    width: 80%;
+    font-size: 4.5rem;
+    color: white;
+    display: block;
+    margin: 0px auto 20px auto;
 }
 
 
 .tnmyImage{
+    margin-top: 100px;
     max-width: 400px;
     width: 30%;
     min-width: 200px;
     box-shadow: 5px 5px 25px gray;
     border-radius: 50%;
+}
+
+.about-desc {
+    line-height: 1.3;
+    font-size: 25px;
 }
 
 
@@ -43,15 +50,16 @@
     height: 600px;
 }
 
-.objective-container {
+.objective-container{
     width: 80%;
-    font-size: 30px;
-    margin: 0 auto 0 auto;
+    margin: 20px auto;
 }
 
 .objective {
+    font-size: 30px;
     padding: 20px 0 5px 0px;
     text-decoration: underline;
+    line-height: 1.6;
 }
 
 .objective-desc {
@@ -59,19 +67,9 @@
     font-size: 22px;
     text-align: center;
     margin: auto;
+    line-height: 1.5;
 }
 
-.rotate {
-    transform: rotateX(-180deg);
-    /* animation: rotation 1s linear infinite; */
-}
-
-@keyframes rotation {
-    from {
-        transform: rotateY(45deg);
-    }
-
-    to {
-        transform: rotateY(225deg);
-    }
+.about .blink {
+    color: cyan;
 }

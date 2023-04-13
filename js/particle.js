@@ -83,3 +83,31 @@ particlesJS("particles-js", {
 //     requestAnimationFrame(update);
 // };
 // requestAnimationFrame(update);
+
+
+// var Utils = new Utils();
+$(window).on("load", particleAddFadeIn());
+
+$(window).scroll(function () {
+    particleAddFadeIn(true);
+});
+
+function particleAddFadeIn(repeat) {
+    var classToFadeIn = ".particle-will-fadeIn";
+
+    $(classToFadeIn).each(function (index) {
+        var isElementInView = Utils.isElementInView($(this), false);
+        if (isElementInView) {
+            if (
+                !$(this).hasClass("particle-fadeInRight") &&
+                !$(this).hasClass("particle-fadeInLeft")
+            ) {
+                if (index % 2 == 0) $(this).addClass("particle-fadeInRight");
+                else $(this).addClass("particle-fadeInLeft");
+            }
+        } else if (repeat) {
+            $(this).removeClass("particle-fadeInRight");
+            $(this).removeClass("particle-fadeInLeft");
+        }
+    });
+}
