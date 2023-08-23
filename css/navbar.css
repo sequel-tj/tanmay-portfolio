@@ -1,8 +1,9 @@
 #navbar{
-    width: 20%;
+    width: 100%;
     height: 60px;
+    margin-left: 150px;
     position: fixed;
-    right: 0;
+    /* right: 0; */
     padding: 20px;
     z-index: 1;
     background-color:black;
@@ -11,17 +12,17 @@
 
 .navbar{
     position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
     width: 100%;
     height: 100%;
 }
 
 .navlist{
     display: flex;
-    width: 100%;
+    width: 80%;
     font-size: 20px;
     justify-content: space-between;
     list-style-type: none;

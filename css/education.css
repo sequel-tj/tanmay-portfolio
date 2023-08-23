@@ -4,6 +4,7 @@
     height: 100vh;
     position: relative;
     user-select: none;
+    max-height: auto;
 }
 
 
@@ -13,7 +14,8 @@
     font-size: 4rem;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 30px;
+    padding-top: 5%;
+    padding-bottom: 4%;
 }
 
 .howToSvgEdu {
@@ -30,7 +32,7 @@
     text-align: center;
 }
 
-.svgPathEdu svg {
+/* .svgPathEdu svg {
     width: 100%;
     height: auto;
     max-height: 780px;
@@ -40,28 +42,60 @@
     width: 150px;
     height: auto;
     position: absolute;
+} */
+
+/* .svgCarEdu svg {
+    offset-path: path('M 350 125 C 900 150 1050 175 1070 250 C 950 400 350 300 370 470 C 350 600 800 570 1070 580 ');
+    offset-distance: 0%;
+} */
+
+.carTrackContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 500px;
+    max-height: auto;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.svgCarEdu svg {
-    offset-path: path('M 350 125 C 900 150 1050 175 1070 250 C 950 400 350 300 370 470 C 350 600 800 570 1070 580 ');
+.carTrack {
+    position: relative;
+    width: 50%;
+    height: auto;
+    overflow: visible;
+    /* background-color: yellow; */
+}
+
+.carEdu {
+    background: white;
+}
+
+
+
+.carEdu {
+    offset-path: path('M 39.095 98.106 C 211.336 98.106 418.025 98.106 418.025 178.276 C 418.025 258.446 39.095 218.36 39.095 298.531 C 39.095 378.701 349.129 378.701 452.474 378.701');
     offset-distance: 0%;
 }
 
-#svgCarEduHover {
+/* #svgCarEduHover,  */
+#carEdu {
     animation: move 9s ease-in-out forwards;
 }
 
 @keyframes move {
-    35% {
-        offset-distance: 30%;
+    33% {
+        offset-distance: 27%;
     }
 
     66% {
-        offset-distance: 61%;
+        offset-distance: 58%;
     }
 
     100% {
-        offset-distance: 100%;
+        offset-distance: 96%;
     }
 }
 
@@ -130,6 +164,9 @@
     }
     70% {
         opacity: 0;
+    }
+    95% {
+        opacity: 1;
     }
     100% {
         opacity: 1;

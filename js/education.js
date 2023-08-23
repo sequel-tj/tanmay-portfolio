@@ -1,12 +1,12 @@
-const x = document.getElementsByClassName("svgCarEduHover");
+const x = document.getElementsByClassName("carEdu");
 const arr = ['school10', 'school12', 'clg'];
-const seek = ['4', '8', '12'];
+const seek = ['3.5', '7.5', '11.5'];
 
 function svghover() {
-    x[0].id = "svgCarEduHover";
+    x[0].id = "carEdu";
     for (let i = 0; i < 3; i++) {
         const temp = document.getElementsByClassName(arr[i]);
-        temp[0].style.animation = `educard ${seek[i]}s ease-out forwards`;
+        temp[0].style.animation = `educard ${seek[i]}s ease-in forwards`;
     }
 }
 
