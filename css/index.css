@@ -2,14 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    background-color: gray;
+    /* background-color: black; */
+    background-color: white;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
-    scroll-behavior: smooth;
+    /* overflow: hidden; */
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: transparent;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    background-color: #D62929;
 }

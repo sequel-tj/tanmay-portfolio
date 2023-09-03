@@ -2,9 +2,20 @@
     background-color: black;
     width: 100%;
     height: 100vh;
-    position: relative;
+    /* position: relative; */
     user-select: none;
-    max-height: auto;
+    /* max-height: auto; */
+}
+
+.education-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: purple; */
+}
+
+.edx-margin {
+    margin: 0px 0 0 0;
 }
 
 
@@ -14,8 +25,8 @@
     font-size: 4rem;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 5%;
-    padding-bottom: 4%;
+    padding-top: 7%;
+    padding-bottom: 3%;
 }
 
 .howToSvgEdu {
