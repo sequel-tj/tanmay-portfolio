@@ -2,7 +2,7 @@
     background-color: black;
     width: 100%;
     height: 100vh;
-    /* position: relative; */
+    position: relative;
     user-select: none;
     /* max-height: auto; */
 }
@@ -30,12 +30,12 @@
 }
 
 .howToSvgEdu {
-    width: 200px;
+    width: 300px;
     padding: 10px;
     color: gray;
     position: absolute;
-    top: 40%;
-    right: 45%;
+    top: 42%;
+    right: 40%;
     border-radius: 10px;
 }
 
