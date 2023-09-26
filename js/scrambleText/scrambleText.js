@@ -22,7 +22,7 @@ class TextScramble {
         this.queue.push({ from, to, start, end })
       }
       cancelAnimationFrame(this.frameRequest)
-      this.frame = 0
+      this.frame = 0;
       this.update()
       return promise
     }

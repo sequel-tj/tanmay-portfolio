@@ -1,67 +1,132 @@
+.shadow-effect {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    /* height: 380px; */
+    text-align: center;
+    border: 1px solid #ECECEC;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
+}
+
+#customers-testimonials .shadow-effect ul {
+    font-family: inherit;
+    line-height: 1.5;
+    margin: 3px 0px 17px 5px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.testimonial-name {
+    margin: -17px auto 0;
+    display: table;
+    width: auto;
+    background: #24d24f;
+    text-decoration: none;
+    padding: 9px 35px;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.12), 0 5px 7px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease-out;
+}
+
+.testimonial-name:hover {
+    background-color: #00cc33;
+}
+
+#customers-testimonials .item {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0 50px 0;
+    opacity: .7;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#customers-testimonials .owl-item.active.center .item {
+    opacity: 1;
+    -webkit-transform: scale3d(1.0, 1.0, 1);
+    transform: scale3d(1.0, 1.0, 1);
+}
+
+.owl-carousel .owl-item img {
+    transform-style: preserve-3d;
+    /* max-width: 180px; */
+    max-height: 150px;
+    width: auto;
+    margin: 0 auto 17px;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+    background: #00cc33;
+    transform: translate3d(0px, -50%, 0px) scale(0.7);
+}
+
+#customers-testimonials.owl-carousel .owl-dots {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+    background: #24d24f;
+    display: inline-block;
+    height: 20px;
+    margin: 0 0px 2px 5px;
+    transform: translate3d(0px, -50%, 0px) scale(0.3);
+    transform-origin: 50% 50% 0;
+    transition: all 250ms ease-out 0s;
+    width: 20px;
+}
+
+.owl-next > span, .owl-prev > span {
+    position: absolute;
+    padding: 0 18px;
+    border: 2px solid #f1f1f1;
+    font-size: 2rem;   
+    bottom: 20px;
+    color: #f1f1f1;
+    transition: 0.3s ease-out;
+    border-radius: 50%;
+}
+
+.owl-prev > span {
+    left: 35%;
+}
+
+.owl-next > span {
+    right: 35%;
+}
+
+.owl-prev > span:hover,
+.owl-next > span:hover {
+    box-shadow: -0.05em 0.05em 0.2em #00cc33,  0.05em -0.05em 0.2em #24d24f;
+    text-shadow: -0.05em 0.05em 0.2em #00cc33,  0.05em -0.05em 0.2em #24d24f;
+}
+
 #projects {
     width: 100%;
     height: 100vh;
-    display: grid;
-    place-items: center;
-    background-color: black;
-    /* overflow: hidden; */
+    background-color: #000000;
 }
 
-.projects {
-    position: relative;
-    width: 90%;
-    height: 90vh;
-    text-align: center;
-    border-radius: 15px;
-    /* background-color: rgb(250, 250, 250); */
-}
-
-.project-header {
-    position: relative;
-    color: black;
-    font-size: 3rem;
-}
-
-.project-card-container {
+.projects-container {
+    padding-top: 80px;
     width: 100%;
     height: 100%;
-    margin: 35px 0 35px 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-    row-gap: 25px;
-    word-wrap: break-word;
-    background-color: rgb(240, 240, 240);
-    border-radius: 15px;
-    overflow-y: scroll;
 }
 
-.project-card-box {
-    /* background-color: white; */
-    background-color: black;
+.projects-container > h1 {
+    font-size: 4rem;
+    text-align: center;
     color: white;
-    border-radius: 10px;
-    margin: 30px;
-    padding: 20px;
-    width: 85%;
-    box-shadow: 8px 8px 15px gray;
-}
-
-
-.project-card-container::-webkit-scrollbar-track {
-    margin-left: -10px;
-    -webkit-box-shadow: transparent;
-    border-radius: 0px;
-    background-color: #F5F5F5;
-}
-
-.project-card-container::-webkit-scrollbar {
-    width: 12px;
-    background-color: transparent;
-}
-
-.project-card-container::-webkit-scrollbar-thumb {
-    /* border-radius: 5px; */
-    -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
-    background-color: #D62929;
 }

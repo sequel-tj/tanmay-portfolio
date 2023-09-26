@@ -11,31 +11,35 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/particle.css">
-    <link rel="stylesheet" href="./css/particleInfo.css">
-    <link rel="stylesheet" href="./css/project.css">
-    <link rel="stylesheet" href="./css/contactInfoForm.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/maintenance.css">
-
+    <link rel="stylesheet" href="./css/particle/particle.css">
+    
     <!-- css animations -->
     <link rel="stylesheet" href="./animations/blink.css">
     <link rel="stylesheet" href="./animations/showOnScroll.css">
+    <link rel="stylesheet" href="./css/matrix/matrix.css">
+
+    <!-- source -> https://owlcarousel2.github.io/OwlCarousel2/ -->
+    <link rel="stylesheet" href="./css/owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owlCarousel/owl.theme.default.min.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
+    href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/particleInfo.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/education.css">
     <link rel="stylesheet" href="./css/skills.css">
-    <link rel="stylesheet" href="./css/matrix.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/contactInfoForm.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/maintenance.css">
 
 </head>
 
@@ -56,7 +60,7 @@
 
     <section id="home" class="particle-container">
         <canvas id="matrixcanvas"></canvas>
-        
+
         <div class="particle-box particle-will-fadeIn">
             <div class="particle-info">
                 <h1><span class="im-color">Hi! I'm</span> <span class="tnmy-color">Tanmay</span></h1>
@@ -64,15 +68,15 @@
                     <div class="home-text">Final Year Undergrad Student</div>
                 </div>
                 <!-- <h3> -->
-                    <!-- a &nbsp; -->
-                    <!-- <span class="fullstack-color">Full Stack </span> -->
-                    <!-- <span class="dev-color"></span> -->
-                    <!-- &nbsp; -->
-                    <!-- <span class="particle-blink">&nbsp;</span> -->
+                <!-- a &nbsp; -->
+                <!-- <span class="fullstack-color">Full Stack </span> -->
+                <!-- <span class="dev-color"></span> -->
+                <!-- &nbsp; -->
+                <!-- <span class="particle-blink">&nbsp;</span> -->
                 <!-- </h3> -->
             </div>
 
-            
+
             <!-- <div class="home-container">
                 <div class="home-text"></div>
             </div> -->
@@ -98,7 +102,8 @@
                 </p>
                 <p class="">
                     In my spare time, I enjoy listening to music - it&#39;s a great way to unwind and find inspiration.
-                    I am also passionate about continually enhancing my knowledge of Data Structures and Algorithms. This
+                    I am also passionate about continually enhancing my knowledge of Data Structures and Algorithms.
+                    This
                     passion often leads me to participate in competitive programming challenges, which not only allows
                     me to apply what I&#39;ve learned but also exposes me to new concepts and problem-solving
                     techniques.
@@ -134,18 +139,18 @@
                             <path
                                 d="M 39.095 98.106 C 211.336 98.106 418.025 98.106 418.025 178.276 C 418.025 258.446 39.095 218.36 39.095 298.531 C 39.095 378.701 349.129 378.701 452.474 378.701"
                                 fill="transparent" stroke="#00cc33bb" stroke-width="8"></path>
-                            <circle cx="539.421" cy="113.568" r="10" stroke="red" stroke-width="3" fill="white"
-                                style="" transform="matrix(0.688964, 0, 0, 0.801699, 25.714627, 48.746404)">
+                            <circle cx="539.421" cy="113.568" r="10" stroke="red" stroke-width="3" fill="white" style=""
+                                transform="matrix(0.688964, 0, 0, 0.801699, 25.714627, 48.746404)">
                             </circle>
-                            <circle cx="79.421" cy="266.568" r="10" stroke="blue" stroke-width="3" fill="white"
-                                style="" transform="matrix(0.688964, 0, 0, 0.801699, 25.714627, 48.746404)">
+                            <circle cx="79.421" cy="266.568" r="10" stroke="blue" stroke-width="3" fill="white" style=""
+                                transform="matrix(0.688964, 0, 0, 0.801699, 25.714627, 48.746404)">
                             </circle>
                             <circle cx="564.421" cy="411.568" r="10" stroke="#FFC300" stroke-width="3" fill="white"
                                 style="" transform="matrix(0.688964, 0, 0, 0.801699, 25.714627, 48.746404)">
                             </circle>
                         </g>
-                        <g class="carEdu" id=""
-                            transform="matrix(0, -0.050222, 0.043397, 0, -110.559916, 100.329443)" style="">
+                        <g class="carEdu" id="" transform="matrix(0, -0.050222, 0.043397, 0, -110.559916, 100.329443)"
+                            style="">
                             <title>car</title>
                             <path
                                 d="M1745.96,3499.21h62.71v-4.22c0-16.45,13.34-29.79,29.8-29.79h55.46l-7.8-102.01c-.09-1.25-.31-2.46-.46-3.69Zm400.67-136.02l-7.84,102.01h55.32c16.46,0,29.8,13.34,29.8,29.79v4.22h62.71l-139.55-139.54c-.14,1.17-.35,2.33-.44,3.52Zm-364.82-859.85h-35.85l35.37,35.37v-30.59c0-1.64.24-3.21.48-4.78Zm122.56,94.81h-63.6l37.89,37.89c9.71-11.88,18.32-24.55,25.71-37.89Zm223.84,0c7.39,13.34,15.99,26.01,25.71,37.89l37.89-37.89Zm123.04-59.44l35.37-35.37h-35.85c.24,1.57.48,3.14.48,4.78Zm-662.97-234.98h65.35c33.06,0,59.86,26.81,59.86,59.86v74.62h605.6v-74.62c0-33.05,26.79-59.86,59.85-59.86h65.36c33.05,0,59.86,26.81,59.86,59.86v125.21v89.16c0,33.06-26.81,59.86-59.86,59.86h-65.36c-33.06,0-59.85-26.8-59.85-59.86v-40.04l-131.91,131.91c6.29,5.34,12.79,10.47,19.62,15.24c72.78,50.76,124.31,129.89,138.71,221.32c2.28,14.46,3.6,29.28,3.9,44.34.12,2.58.12,5.16.12,7.74v20.64v44.33v28.38v44.34v69.83c0,69.42-56.27,125.69-125.75,125.69-21.34,0-40.72,8.74-54.78,22.87l150.09,150.08v-40.04c0-33.06,26.79-59.86,59.85-59.86h65.36c33.05,0,59.86,26.8,59.86,59.86v125.21v89.16c0,33.06-26.81,59.86-59.86,59.86h-65.36c-33.06,0-59.85-26.8-59.85-59.86v-74.62h-96.16c-3.24,12.95-14.86,22.59-28.82,22.59h-64.67l-1.22,15.91h28.94c12.47,0,22.59,10.11,22.59,22.58c0,12.49-10.12,22.6-22.59,22.6h-32.41l-.5,6.45-3.36,44.34-2.22,28.44-3.36,44.27-2.22,28.44-3.36,44.28-3.22,41.88h191.9c28.36,0,47.82,28.56,37.44,54.95l-18.67,47.5c-11.9,30.29-41.12,50.2-73.66,50.2h-148.73l-2.88,37.35c0,40.38-33.83,73.08-75.65,73.08-20.88,0-39.78-8.16-53.46-21.43-13.68-13.2-22.14-31.43-22.14-51.65l-2.86-37.35h-148.75c-32.53,0-61.76-19.91-73.65-50.2l-18.68-47.5c-10.37-26.39,9.09-54.95,37.45-54.95h191.94l-3.2-41.88h-.03l-3.36-44.28h.03l-2.16-28.44h-.03l-3.42-44.27h.02l-2.15-28.44h-.03l-3.42-44.34h.03l-.49-6.45h-32.48c-12.48,0-22.59-10.11-22.59-22.6c0-12.47,10.11-22.58,22.59-22.58h29.02l-1.21-15.91h-64.76c-13.96,0-25.58-9.64-28.82-22.59h-96.16v74.62c0,33.06-26.8,59.86-59.86,59.86h-65.35c-33.06,0-59.86-26.8-59.86-59.86v-89.16-125.21c0-33.06,26.8-59.86,59.86-59.86h65.35c33.06,0,59.86,26.8,59.86,59.86v40.04l150.18-150.18c-14.06-14.07-33.41-22.77-54.7-22.77h-.23c-69.42,0-125.69-56.27-125.69-125.69v-69.83-44.34-28.38-44.33-20.64c0-2.58,0-5.16.11-7.74.31-15.06,1.63-29.88,3.91-44.34c14.39-91.43,65.93-170.56,138.71-221.32c6.83-4.77,13.33-9.9,19.62-15.24l-131.91-131.91v40.04c0,33.06-26.8,59.86-59.86,59.86h-65.35c-33.06,0-59.86-26.8-59.86-59.86v-89.16-125.21c0-33.05,26.8-59.86,59.86-59.86"
@@ -199,8 +204,8 @@
                             <path
                                 d="M1613.63,3404.73h-65.35c-33.06,0-59.86,26.8-59.86,59.86v125.21h185.07v-125.21c0-33.06-26.8-59.86-59.86-59.86"
                                 fill="#191a1b"></path>
-                            <path d="M2309.41,2990.73c-.3-15.06-1.62-29.88-3.9-44.34h-26.45v44.34h30.35"
-                                fill="#e7f1f3"></path>
+                            <path d="M2309.41,2990.73c-.3-15.06-1.62-29.88-3.9-44.34h-26.45v44.34h30.35" fill="#e7f1f3">
+                            </path>
                             <path d="M2309.53,3063.44v-44.33h-30.47v44.33h30.47" fill="#e7f1f3"></path>
                             <path d="M2309.53,3136.16v-44.34h-30.47v44.34h30.47" fill="#e7f1f3"></path>
                             <path d="M1677.06,2990.73v-44.34h-29.99c-2.28,14.46-3.61,29.28-3.91,44.34h33.9"
@@ -404,92 +409,111 @@
     </section>
 
     <section id="projects">
-        <div class="projects">
-            <div class="project-card-container">
-                <h1 class="project-header">PROJECTS</h1>
-                <div class="project-card-box">
-                    <img width="350px" height="150px" src="./img/projects/coinxchange.png" alt="project-img">
-                    <div class="project-card">
-                        <h3 class="project-title">CoinXChange</h3>
-                        <p class="project-desciption">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                            provident qui odio
-                            culpa corporis, maiores dolorem, dolore sed enim tenetur praesentium exercitationem! Culpa
-                            illo fugit ab
-                            nulla blanditiis iste quasi.</p>
-                    </div>
-                </div>
-                <div class="project-card-box">
-                    <img width="350px" height="150px" src="./img/projects/coinxchange.png" alt="project-img">
-                    <div class="project-card">
-                        <h3 class="project-title">CoinXChange</h3>
-                        <p class="project-desciption">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                            provident qui odio
-                            culpa corporis, maiores dolorem, dolore sed enim tenetur praesentium exercitationem! Culpa
-                            illo fugit ab
-                            nulla blanditiis iste quasi.</p>
-                    </div>
-                </div>
-                <div class="project-card-box">
-                    <img width="350px" height="150px" src="./img/projects/coinxchange.png" alt="project-img">
-                    <div class="project-card">
-                        <h3 class="project-title">CoinXChange</h3>
-                        <p class="project-desciption">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                            provident qui odio
-                            culpa corporis, maiores dolorem, dolore sed enim tenetur praesentium exercitationem! Culpa
-                            illo fugit ab
-                            nulla blanditiis iste quasi.</p>
-                    </div>
-                </div>
-                <div class="project-card-box">
-                    <img width="350px" height="150px" src="./img/projects/coinxchange.png" alt="project-img">
-                    <div class="project-card">
-                        <h3 class="project-title">CoinXChange</h3>
-                        <p class="project-desciption">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                            provident qui odio
-                            culpa corporis, maiores dolorem, dolore sed enim tenetur praesentium exercitationem! Culpa
-                            illo fugit ab
-                            nulla blanditiis iste quasi.</p>
-                    </div>
-                </div>
-                <div class="project-card-box">
-                    <img width="350px" height="150px" src="./img/projects/coinxchange.png" alt="project-img">
-                    <div class="project-card">
-                        <h3 class="project-title">CoinXChange</h3>
-                        <p class="project-desciption">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                            provident qui odio
-                            culpa corporis, maiores dolorem, dolore sed enim tenetur praesentium exercitationem! Culpa
-                            illo fugit ab
-                            nulla blanditiis iste quasi.</p>
-                    </div>
-                </div>
-                <div class="project-card-box">
-                    <img width="350px" height="150px" src="./img/projects/coinxchange.png" alt="project-img">
-                    <div class="project-card">
-                        <h3 class="project-title">CoinXChange</h3>
-                        <p class="project-desciption">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                            provident qui odio
-                            culpa corporis, maiores dolorem, dolore sed enim tenetur praesentium exercitationem! Culpa
-                            illo fugit ab
-                            nulla blanditiis iste quasi.</p>
-                    </div>
-                </div>
-                <div class="project-card-box">
-                    <img width="350px" height="150px" src="./img/projects/coinxchange.png" alt="project-img">
-                    <div class="project-card">
-                        <h3 class="project-title">CoinXChange</h3>
-                        <p class="project-desciption">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                            provident qui odio
-                            culpa corporis, maiores dolorem, dolore sed enim tenetur praesentium exercitationem! Culpa
-                            illo fugit ab
-                            nulla blanditiis iste quasi.</p>
+        <div class="projects-container">
+            <h1>PROJECTS</h1>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="customers-testimonials" class="owl-carousel">
+
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" style="max-width: 300px;"
+                                    src="./img/projects/Flipkart-logo.jpg" alt="Flipkart-logo">
+                                <h3>Flipkart Clone (under progress)</h3>
+                                <ul>
+                                    <li>A full-stack e-commerce web application inspired by Flipkart using the MERN stack (MongoDB, Express.js, React.js, Node.js).</li>
+                                    <li>Implemented user authentication and authorization using JSON Web Tokens (JWT) for secure access.</li>
+                                    <li>Created RESTful APIs using Node.js and Express.js for handling requests and responses between the front-end and back-end.</li>
+                                </ul>
+                            </div>
+                            <a href="https://github.com/sequel-tj/flipkart-clone" class="testimonial-name" target="_blank">Github Link</a>
+                        </div>
+
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="./img/projects/urlParser.png" alt="urlParser-img">
+                                <h3>URL Parser (Node.js, Express.js)</h3>
+                                <ul>
+                                    <li>URL Parser computes the mathematical expression passed in the form of url.</li>
+                                    <li>JSON object is returned as a result which contains both the question and answer.</li>
+                                </ul>
+                            </div>
+                            <a href="https://github.com/sequel-tj/urlParser" class="testimonial-name" target="_blank">Github Link</a>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="./img/projects/todoList.png" alt="todoList-img">
+                                <h3>Todo List</h3>
+                                <ul>
+                                    <li>Developed a Todo List application using Node.js, Express.js, and EJS with a focus on user experience and design.</li>
+                                    <!-- <li>Implemented server-side rendering using EJS to dynamically generate HTML based on server data.</li> -->
+                                    <li>Utilized Express.js for handling HTTP requests and routing.</li>
+                                </ul>
+                            </div>
+                            <a href="https://github.com/sequel-tj/todo-list" class="testimonial-name" target="_blank">Github Link</a>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="./img/projects/coinxchange.png" alt="coinXchange-img">
+                                <h3>coinXchange</h3>
+                                <ul>
+                                    <li>Developed a React.js application that converts the input value of one type of cryptocurrency to another.</li>
+                                    <li>Integrated with an external API to fetch real-time cryptocurrency values, ensuring accurate conversions.</li>
+                                    <!-- <li>Implemented a user-friendly interface that allows users to easily input and convert cryptocurrency values.</li> -->
+                                </ul>
+                            </div>
+                            <a href="https://github.com/sequel-tj/coinXchange" class="testimonial-name" target="_blank">Github Link</a>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="./img/projects/theRoad.png" alt="theRoad-img">
+                                <h3>The Road</h3>
+                                <ul>
+                                    <li>Developed a responsive website named “The Road” that showcases few tour packages.</li>
+                                    <li>Utilized HTML, CSS, and JavaScript to create an engaging user interface with cool animations.</li>
+                                    <!-- <li>Ensured the website is responsive and compatible across different browsers and devices.</li> -->
+                                </ul>
+                            </div>
+                            <a href="https://github.com/sequel-tj/road-project" class="testimonial-name" target="_blank">Github Link</a>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="./img/projects/simonGame.png" alt="simonGame-img">
+                                <h3>Classic Simon Game</h3>
+                                <ul>
+                                    <li>Developed an interactive web-based version of the classic Simon game using HTML and CSS.</li>
+                                    <li>Implemented game logic to create an engaging and challenging user experience.</li>
+                                    <li>Designed a scoreboard to track and display user scores and levels.</li>
+                                </ul>
+                            </div>
+                            <a href="https://github.com/sequel-tj/classic-simon-game" class="testimonial-name" target="_blank">Github Link</a>
+                        </div>
+
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="./img/projects/tic-tac-toe.png" alt="tic-tac-toe-img">
+                                <h3>Tic Tac Toe Game</h3>
+                                <ul>
+                                    <li>Developed an interactive 2-player Tic Tac Toe game using Python and the Pygame library.</li>
+                                    <li>Implemented game logic to check for winning conditions and draw conditions, ensuring a smooth and accurate gaming experience.</li>
+                                </ul>
+                            </div>
+                            <a href="https://github.com/sequel-tj/Tic-Tac-Toe-using-Pygame" class="testimonial-name" target="_blank">Github Link</a>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
     <section id="contactMe" class="contactForm-container">
-        <h1 class="contact-header">Get In Touch</h1>
+        <h1 class="contact-header">GET IN TOUCH</h1>
         <div class="getInTouch">
             <img width="250px" height="auto" src="./img/aboutImg/envelope greeting.png" alt="contact-img">
         </div>
@@ -508,16 +532,21 @@
     </section> -->
 
 
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/showOnScroll.js"></script>
-    <script src="./js/particles.min.js"></script>
-    <script src="./js/particle.js"></script>
+    <script src="./js/jquery/jquery.min.js"></script>
+    <script src="./js/showOnScroll/showOnScroll.js"></script>
+    <script src="./js/matrix/matrix.js"></script>
+    <script src="./js/particle/particles.min.js"></script>
+    <script src="./js/particle/particle.js"></script>
+    <script src="./js/scrambleText/scrambleText.js"></script>
+    <script src="./js/owlCarousel/owl.carousel.min.js"></script>
+    <!-- <script src="./js/owlCarousel/owl.carousel.js"></script> -->
+
     <script src="./js/education.js"></script>
     <script src="./js/skills.js"></script>
-    <script src="./js/matrix.js"></script>
-    <script src="./js/scrambleText.js"></script>
+    <script src="./js/project.js"></script>
     <!-- <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script> -->
     <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 
 </body>
+
 </html>
