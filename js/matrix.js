@@ -3,6 +3,7 @@ var context = canvas.getContext('2d');
 var W = window.innerWidth;
 var H = window.innerHeight;
 
+
 canvas.width = W;
 canvas.height = H;
 
@@ -15,6 +16,7 @@ for(var i=0; i<columns; i++){
 var str = "JavaScript Hacking Effect";
 function draw(){
     context.fillStyle = "rgba(0,0,0,0.05)";
+    // context.fillStyle = "rgba(255,255,255,0.05)";
     context.fillRect(0, 0, W, H);
     context.fontSize = "700 " + fontSize + "px";
     context.fillStyle = "#00cc33";

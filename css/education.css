@@ -1,23 +1,15 @@
 .EducationSection {
-    background-color: black;
     width: 100%;
     height: 100vh;
+    background: black;
     position: relative;
-    user-select: none;
-    /* max-height: auto; */
 }
 
 .education-container {
-    position: relative;
     width: 100%;
     height: 100%;
-    /* background-color: purple; */
+    padding-top: 100px;
 }
-
-.edx-margin {
-    margin: 0px 0 0 0;
-}
-
 
 #EducationTitle {
     position: relative;
@@ -25,73 +17,44 @@
     font-size: 4rem;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 7%;
-    padding-bottom: 3%;
+    text-shadow: -0.1em 0.01em 0.0em #24d24f,  0.01em 0.01em 0.0em #24d24f;
+    transition: 0.3s ease-out;
+    letter-spacing: 12px;
+}
+
+#EducationTitle:hover {
+    text-shadow: -0.01em 0.01em 0.0em #24d24f,  0.1em 0.01em 0.0em #24d24f;
 }
 
 .howToSvgEdu {
-    width: 300px;
-    padding: 10px;
-    color: gray;
     position: absolute;
-    top: 42%;
-    right: 40%;
+    width: 17vw;
+    top: 41%;
+    right: 45%;
+    color: gray;
     border-radius: 10px;
 }
 
-.howToSvgEdu h2 {
+.carTrackContainer {
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    /* min-height: 500px;
+    max-height: auto; */
     text-align: center;
 }
 
-/* .svgPathEdu svg {
-    width: 100%;
-    height: auto;
-    max-height: 780px;
-}
-
-.svgCarEdu {
-    width: 150px;
-    height: auto;
-    position: absolute;
-} */
-
-/* .svgCarEdu svg {
-    offset-path: path('M 350 125 C 900 150 1050 175 1070 250 C 950 400 350 300 370 470 C 350 600 800 570 1070 580 ');
-    offset-distance: 0%;
-} */
-
-.carTrackContainer {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    min-height: 500px;
-    max-height: auto;
-    /* background-color: antiquewhite; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .carTrack {
-    position: relative;
-    width: 50%;
+    width: 45%;
     height: auto;
     overflow: visible;
-    /* background-color: yellow; */
 }
-
-.carEdu {
-    background: white;
-}
-
-
 
 .carEdu {
     offset-path: path('M 39.095 98.106 C 211.336 98.106 418.025 98.106 418.025 178.276 C 418.025 258.446 39.095 218.36 39.095 298.531 C 39.095 378.701 349.129 378.701 452.474 378.701');
     offset-distance: 0%;
 }
 
-/* #svgCarEduHover,  */
 #carEdu {
     animation: move 9s ease-in-out forwards;
 }
@@ -112,19 +75,15 @@
 
 .education{
     position: absolute;
-    height: 150px;
     font-size: 14px;
-    border: 2px solid black;
-    background-color: whitesmoke;
-    box-shadow: 2px 2px 25px cyan;
+    background: linear-gradient(45deg, #24d24f55, #24df53aa);
+    border: 1px solid #00cc33;
+    color: rgb(241, 253, 234);
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .education hr, .clg hr {
-    width: 80%;
+    width: 100%;
 }
 
 .education h1 {
@@ -140,28 +99,28 @@
 } 
 
 .school10  {
-    width: 300px;
-    height: 170px;
-    top: 150px;
-    right: 100px;
+    top: 25%;
+    right: 10%;
     opacity: 0;
+    /* top: 150px;
+    right: 100px; */
     /* animation: educard 4s ease-out forwards; */
 }
 
 .school12 {
-    width: 300px;
-    height: 170px;
-    top: 350px;
-    left: 50px;
+    top: 45%;
+    left: 10%;
+    /* top: 350px;
+    left: 50px; */
     opacity: 0;
     /* animation: educard 8s ease-out forwards; */
 }
 
 .clg {
-    width: 350px;
-    height: 180px;
-    top: 460px;
-    right: 40px;
+    top: 70%;
+    right: 4%;
+    /* top: 500px;
+    right: 60px; */
     opacity: 0;
     /* animation: educard 12s ease-out forwards; */
 }

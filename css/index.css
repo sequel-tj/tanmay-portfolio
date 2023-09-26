@@ -1,3 +1,8 @@
+:root {
+    --theme-color: #00cc33;
+    --font-mont: 'Montserrat', sanserif;
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +10,10 @@
     scroll-behavior: smooth;
     
 }
+
+canvas {
+    display: block;
+} 
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -14,6 +23,10 @@ body {
     height: 100vh;
     width: 100%;
     /* overflow: hidden; */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar-track {
@@ -28,7 +41,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
+    /* border-radius: 0px; */
+    /* -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2); */
+    background-color: #1ec046;
+    border: 3px solid transparent;
     border-radius: 0px;
-    -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
-    background-color: #D62929;
+    background-clip: content-box;
+
+    /* background-color: #D62929; */
 }
