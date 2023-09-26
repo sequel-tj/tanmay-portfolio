@@ -1,3 +1,5 @@
+// source -> https://github.com/VincentGarreau/particles.js/
+
 particlesJS("particles-js", {
     particles: {
         number: { value: 250, density: { enable: true, value_area: 1000 } },

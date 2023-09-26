@@ -4,7 +4,6 @@
     height: 100vh;
     text-align: center;
     background: #000;
-    /* overflow: hidden; */
 }
 
 .particle-box{
@@ -20,7 +19,6 @@
 
  .particle-info h1 {
     font-size: 4rem;
-    /* padding: 10px; */
     font-weight: 200;
 }
 
