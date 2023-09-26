@@ -5,6 +5,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.contact-header {
+    margin: 100px 0;
+    color: white;
+    font-size: 4rem;
+    letter-spacing: 6px;
+    text-shadow: -0.1em 1.1em 1em #00cc33,  -0.1em -1.1em 1em #00cc33;
+    transition: 0.3s linear;
+}
+
+.contact-header:hover {
+    text-shadow: none;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #00cc33;
+    color: white;
+
+    /* text-shadow: -0.05em 0.05em 0em #00cc33,  0.05em -0.05em 0em #00cc33; */
 }
 
 .getInTouch {
