@@ -43,7 +43,7 @@
 #customers-testimonials .item {
     text-align: center;
     padding: 0px;
-    margin: 40px 0 40px 0;
+    margin: 40px 0 20px 0;
     opacity: .7;
     -webkit-transform: scale3d(0.8, 0.8, 1);
     transform: scale3d(0.8, 0.8, 1);
@@ -130,7 +130,7 @@
 }
 
 .projects-container {
-    padding-top: 80px;
+    padding-top: 70px;
     width: 100%;
     height: 100%;
 }
