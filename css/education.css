@@ -13,13 +13,13 @@
 
 #EducationTitle {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     font-size: 4rem;
     color: rgb(255, 255, 255);
     text-align: center;
     text-shadow: -0.1em 0.01em 0.0em #24d24f,  0.01em 0.01em 0.0em #24d24f;
     transition: 0.3s ease-out;
-    letter-spacing: 12px;
+    letter-spacing: 8px;
 }
 
 #EducationTitle:hover {

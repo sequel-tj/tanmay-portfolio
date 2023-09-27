@@ -7,10 +7,10 @@ jQuery(document).ready(function ($) {
         center: true,
         items: 3,
         margin: 0,
-        // autoplay: true,
+        autoplay: true,
         dots: true,
         nav: true,
-        autoplayTimeout: 8500,
+        autoplayTimeout: 5500,
         smartSpeed: 450,
         responsive: {
             0: {
@@ -25,3 +25,7 @@ jQuery(document).ready(function ($) {
         }
     });
 });
+
+// $(document).ready(function(){
+//     $('#customers-testimonials').hScroll();
+// });
