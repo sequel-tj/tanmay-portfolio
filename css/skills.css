@@ -1,94 +1,230 @@
-
-.skills {
-    position: relative;
-    background: black;
+#skills {
     width: 100%;
     height: 100vh;
+    padding-top: 70px;
+    position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
+    background: #000;
+    align-items: center;
+    overflow: hidden;
 }
 
 .skills-container {
     position: relative;
-    width: 80%;
-    height: 80%;
-    margin: 25px 0 0 0;
-    background-color: rgb(250 250 250);
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 600px;
+    height: 600px;
+    border: 2px dotted #fff;
+    border-radius: 50%;
+    /* animation: animate_00 20s linear infinite; */
+    transform: scale(0.9);
+    z-index: 1;
+    /* overflow: hidden; */
 }
 
-#SkillsTitle {
-    text-align: center;
-    font-size: 60px;
-    padding-top: 10px;
-}
-
-.title-hr {
-    width: 50%;
-    margin: auto;
-}
-
-.images {
-    width: 60px;
-    height: auto;
-    margin-top: 10px;
-}
-
-.LogoPart {
-    width: 80%;
-    height: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    border-radius: 15px;
-    background-color: rgb(250 250 250);
-}
-
-.imageContent {
-    width: 50%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    background-color: white;
-    border-radius: 15px;
-    border: 2px solid rgb(250, 250, 250);
-    box-shadow: 10px 10px 15px rgba(128, 128, 128, 0.577);
-}
-
-.progress {
-    width: 60%;
-    height: 10px;
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-    /* margin: 0 10px 0 10px; */
-}
-
-.progressBar {
+.skills-icon {
     position: relative;
-    width: 0%;
-    height: 10px;
-    background: rgb(27, 217, 27);
-    top: 50%;
-    transform: translate(0%, -50%);
-    border-radius: 10px 0 0 10px;
-    /* animation: loading 3s ease-in-out forwards; */
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-@keyframes loading {
+.imgBx {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 4px #222, 0 0 0 6px #fff;
+    transform: rotate(calc(360deg/7 * var(--i)));
+    transform-origin: 340px;
+    z-index: 1;
+    overflow: hidden;
+    /* filter: saturate(1); */
+    animation: animate_00 20s linear infinite;
+}
+
+.imgBx:hover, .imgBxs:hover {
+    /* filter: saturate(0.3); */
+    box-shadow: 0 0 0 4px #222, 0 0 0 12px #24d24f;
+}
+
+.imgBx > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    transform: rotate(calc(-90deg/7 * var(--i)));
+    transition: 0.5s;
+    background-color: #dedede;
+    cursor: pointer;
+}
+
+
+.skills-lines {
+    position: absolute;
+    inset: 0em;
+    overflow: hidden;
+}
+
+.skills-lines::before {
+    content: '';
+    position: absolute;
+    inset: 80px;
+    border: 4px solid transparent;
+    border-left: 4px solid #2196f3;
+    border-right: 4px solid #24d24f;
+    border-radius: 50%;
+    animation: animate_01 5s linear infinite;
+    /* z-index: 1; */
+    pointer-events: none;
+}
+
+.skills-lines::after {
+    content: '';
+    position: absolute;
+    inset: 160px;
+    border: 4px solid transparent;
+    border-right: 4px solid #ee583a;
+    border-left: 4px solid #efea41;
+    border-radius: 50%;
+    animation: animate_02 5s linear infinite;
+    /* z-index: 1; */
+    pointer-events: none;
+}
+
+@keyframes animate_00 {
     0% {
-        width: 0%;
+        rotate: 0deg;
     }
     100% {
-        width: 100%;
+        rotate: 360deg;
     }
+}
+
+@keyframes animate_01 {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes animate_02 {
+    0% {
+        rotate: 360deg;
+    }
+    100% {
+        rotate: 0deg;
+    }
+}
+
+.skills-header {
+    position: absolute;
+    color: white;
+    inset: 160px;
+    overflow: hidden;
+}
+
+
+.skills-header .skills-title {
+    position: relative;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    transition: 0.3s;
+    text-shadow: 0.01em 0.1em 0em #24d24f, 0.01em 0em 0em #24d24f;
+}
+
+.skills-title:hover {
+    text-shadow: 0.01em 0.01em 0em #24d24f, 0.01em -0.1em 0em #24d24f;
+}
+
+.skill-rem-right {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    right: -300px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transform: scale(0.9);
+    z-index: 1;
+    /* overflow: hidden; */
+    /* background-color: #2196f3; */
+    rotate: -130deg;
+}
+
+.skill-rem-left {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transform: scale(0.9);
+    z-index: 1;
+    /* overflow: hidden; */
+    /* background-color: #2196f3; */
+    rotate: -130deg;
+}
+
+.rem-icons {
+    position: relative;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.imgBxs {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 4px #222, 0 0 0 6px #fff;
+    transform: rotate(calc(360deg/7 * var(--j)));
+    transform-origin: 340px;
+    z-index: 1;
+    overflow: hidden;
+    animation: animate_000 20s linear infinite;
+}
+
+.imgBxs > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    transform: rotate(calc(-90deg/7 * var(--j)));
+    transition: 0.5s;
+    background-color: #dedede;
+    cursor: pointer;
+}
+
+@keyframes animate_000 {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.rem-skills-title {
+
 }

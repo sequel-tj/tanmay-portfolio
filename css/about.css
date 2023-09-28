@@ -61,10 +61,10 @@
 }
 
 .d3 {
-    font-size: 1em;
+    font-size: 4rem;
     color: #fff;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    letter-spacing: 8px;
     transition: 0.3s ease-in-out;
     text-shadow: -0.1em 0.05em 0 #00cc33,  0.1em -0.05em 0 #24d24f;
 }
