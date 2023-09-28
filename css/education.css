@@ -5,15 +5,24 @@
     position: relative;
 }
 
-.education-container {
-    width: 100%;
+.EducationSection > div {
     height: 100%;
-    padding-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.education-container {
+    position: relative;
+    width: 100%;
+    transform: scale(0.9);
 }
 
 #EducationTitle {
+    padding-top: 80px;
     position: relative;
-    /* width: 100%; */
     font-size: 4rem;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -29,26 +38,24 @@
 .howToSvgEdu {
     position: absolute;
     width: auto;
-    /* top: 37%; */
-    top: 300px;
+    top: 15%;
     right: 45%;
     color: gray;
     border-radius: 10px;
 }
 
 .carTrackContainer {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     width: 100%;
-    /* height: auto; */
     min-height: 500px;
-    max-height: 500px;
+    height: auto;
     text-align: center;
 }
 
 .carTrack {
     width: 45%;
     min-height: 500px;
-    max-height: 500px;
+    height: auto;
     overflow: visible;
 }
 
@@ -101,28 +108,22 @@
 } 
 
 .school10  {
-    top: 25%;
-    right: 6%;
+    top: 2%;
+    right: 8%;
     opacity: 0;
-    /* top: 150px;
-    right: 100px; */
     /* animation: educard 4s ease-out forwards; */
 }
 
 .school12 {
-    top: 45%;
+    top: 20%;
     left: 6%;
-    /* top: 350px;
-    left: 50px; */
     opacity: 0;
     /* animation: educard 8s ease-out forwards; */
 }
 
 .clg {
-    top: 60%;
+    top: 52%;
     right: 2%;
-    /* top: 500px;
-    right: 60px; */
     opacity: 0;
     /* animation: educard 12s ease-out forwards; */
 }

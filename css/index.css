@@ -21,27 +21,30 @@ body {
     background-color: white;
     height: 100vh;
     width: 100%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     /* overflow: hidden; */
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
     /* overflow-x: hidden; */
 }
 
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: transparent;
-    border-radius: 10px;
-    background-color: #F5F5F5;
-}
-
+/* width */
 ::-webkit-scrollbar {
-    width: 12px;
-    background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #1ec046;
-    border: 3px solid transparent;
-    border-radius: 0px;
-    background-clip: content-box;
-}
+    width: 5px;
+    background-color: #222;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #00cc3388; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00cc33; 
+  }
