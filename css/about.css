@@ -15,9 +15,13 @@
     color: white;
 }
 
-#aboutMeSection img{
+#aboutMeSection > h1 {
+    display: none;
+}
+
+#aboutMeSection > img{
     border-radius: 10px;
-    width: 400px;
+    width: 28%;
     transition: background-color 200ms ease-out;
     height: auto;
     transition: 0.3s ease-out;
@@ -40,11 +44,17 @@
     justify-content: center;
 }
 
-#my-details h1{
+#my-details > h1 {
     margin: 2rem 30px;
 }
 
-#my-details p{
+#aboutMeSection > h1 {
+    margin: 3rem 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#my-details > p {
     text-align: justify;
     margin: 5px 30px;
     font-size: 18px;
@@ -84,3 +94,56 @@
 .d4:hover {
     text-shadow: -0.08em 0.08em 0.3em #00cc33,  0.08em 0.08em 0.3em #24d24f;
   }
+
+
+@media screen and (max-width: 1100px) {
+
+    #aboutMeSection {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    #aboutMeSection > h1 {
+        display: block;
+        transform: scale(0.9);
+        margin: 2rem 10px;
+    }
+    
+    #aboutMeSection > img { 
+        width: 45%;
+    }
+
+    #my-details {
+        width: 100%;
+        display: inline;
+    }
+    
+    #my-details  > h1{
+        display: none;
+    }
+    
+    #my-details > p {
+        margin: 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    #my-details > p {
+        margin: 10px;
+        font-size: 12px;
+    }
+    
+    #aboutMeSection > h1 {
+        transform: scale(0.65);
+    }
+    
+    #aboutMeSection > img { 
+        width: 45%;
+    }
+
+    .d4 {
+        display: none;
+    }
+}

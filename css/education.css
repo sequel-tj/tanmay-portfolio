@@ -187,3 +187,9 @@
 	}
 }
  
+
+@media screen and (max-width: 600px) {
+    #EducationTitle {
+        font-size: 2rem;
+    }
+}

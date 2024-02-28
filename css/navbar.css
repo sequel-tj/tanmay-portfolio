@@ -1,32 +1,39 @@
 #navbar{
     width: 100%;
-    height: 60px;
+    height: 80px;
     position: fixed;
     padding: 20px;
     z-index: 10;
     background-color:rgba(0, 0, 0, 0.6);
+    overflow: hidden;
     font-family: 'Montserrat', sans-serif;
 }
 
 .navbar{
     position: relative;
-    margin: auto;
-    width: 80%;
+    width: 1200px;
     height: 100%;
+    margin: auto;
 }
 
 .navlist{
     display: flex;
     width: 100%;
     font-size: 20px;
-    justify-content: space-around;
     list-style-type: none;
-    align-items: center;
-    position: absolute;
+    overflow-x: auto;
 }
 
+.navlist > li {
+    width: 200px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+}
 
 .navlist li a {
+    width: 200px;
+    text-align: center;
     text-decoration: none;
     color: whitesmoke;
     border-top-color: #00cc33;
@@ -52,3 +59,37 @@
     border-radius: 5px;
     -webkit-text-stroke-color: #24d24f;
 } 
+
+@media screen and (max-width: 1239px) {
+    .navbar {
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1039px) {
+    .navbar {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 839px) {
+    .navbar {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .navbar {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 439px) {
+    .navbar {
+        width: 200px;
+    }
+
+    #navbar {
+        padding: 0;
+    }
+}

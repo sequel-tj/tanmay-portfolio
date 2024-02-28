@@ -1,4 +1,5 @@
 .contactForm-container {
+    position: relative;
     width: 100%;
     height: 94vh;
     background: black;
@@ -26,4 +27,43 @@
 
 .getInTouch {
     color: white;
+}
+
+#contactMe > a {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: 3px solid #f7f7f7;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    transition: 0.15s ease-in;
+}
+
+#contactMe > a:hover {
+    border: 7px solid #00cc33;
+}
+
+#contactMe > a:nth-child(3) {
+    top: calc(65% - 45px);
+    left: calc(15% - 45px);
+}
+
+#contactMe > a:nth-child(4) {
+    top: calc(28.5% - 45px);
+    left: calc(15% - 45px);
+}
+
+#contactMe > a:nth-child(5) {
+    top: calc(28.5% - 45px);
+    right: calc(15% - 45px);
+}
+
+#contactMe > a:nth-child(6) {
+    top: calc(67.5% - 45px);
+    right: calc(15% - 45px);
+}
+
+#contactMe > a > img {
+    width: 60px;
 }
