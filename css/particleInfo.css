@@ -108,14 +108,46 @@
 }
 
 .home-container {
-  width: 100%;
+    width: 100%;
 }
+
 .home-text {
-  font-weight: 100;
-  font-size: 28px;
-  color: #FAFAFA;
+    font-weight: 100;
+    font-size: 28px;
+    color: #FAFAFA;
 }
+
 .dud {
     color: #757575;
     text-shadow: -0.01em 0.01em 0.1em #fff,  0.01em 0.01em 0.1em #fff;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .particle-info h1 {
+        font-size: 3.5rem;
+    }
+
+    .im-color {
+        font-size: 2.5rem;
+    }
+
+    .home-text {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .particle-info h1 {
+        font-size: 2.5rem;
+    }
+
+    .im-color {
+        font-size: 1.5rem;
+    }
+
+    .home-text {
+        font-size: 17px;
+    }
 }

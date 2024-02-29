@@ -1,9 +1,8 @@
 .shadow-effect {
     background: #f1fff5;
-    /* background: linear-gradient(45deg, #e3ffeb, #d1fbdc, #d2fbdc); */
     padding: 20px;
     border-radius: 4px;
-    height: 420px;
+    height: 370px;
     text-align: center;
     border: 1px solid #ECECEC;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
@@ -45,8 +44,8 @@
     padding: 0px;
     margin: 40px 0 20px 0;
     opacity: .7;
-    -webkit-transform: scale3d(0.8, 0.8, 1);
     transform: scale3d(0.8, 0.8, 1);
+    -webkit-transform: scale3d(0.8, 0.8, 1);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -60,9 +59,7 @@
 
 .owl-carousel .owl-item img {
     transform-style: preserve-3d;
-    /* max-width: 180px; */
     max-height: 150px;
-    /* width: auto; */
     object-fit: contain;
     margin: 0 auto 17px;
 }
@@ -85,7 +82,7 @@
     display: inline-block;
 }
 
-#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+#customers-testimonials.owl-carousel .owl-dots .owl-dot > span {
     background: #24d24f;
     display: inline-block;
     height: 20px;
@@ -95,36 +92,6 @@
     transition: all 250ms ease-out 0s;
     width: 20px;
     border-radius: 10px;
-}
-
-/* #customers-testimonials.owl-carousel .owl-nav {
-    margin-top: 10px;
-} */
-
-.owl-next > span, .owl-prev > span {
-    position: absolute;
-    padding: 0 20px;
-    opacity: 0.7;
-    font-size: 2rem;   
-    bottom: 20px;
-    color: #f1f1f1;
-    transition: 0.2s ease-out;
-    border-radius: 5px;
-}
-
-.owl-prev > span {
-    left: 35%;
-}
-
-.owl-next > span {
-    right: 35%;
-}
-
-.owl-prev > span:hover,
-.owl-next > span:hover {
-    box-shadow: -0.05em 0.05em 0.2em #00cc33,  0.05em -0.05em 0.2em #24d24f;
-    text-shadow: -0.05em 0.05em 0.2em #00cc33,  0.05em -0.05em 0.2em #24d24f;
-    opacity: 1;
 }
 
 #projects {
@@ -152,14 +119,35 @@
     font-size: 4rem;
     text-align: center;
     color: white;
-    /* text-shadow: 0em 0.0em 0.1em #00cc33,  0.1em 0.0em 0.1em #00cc33; */
     text-shadow: -0.05em 0.05em 0em #00cc33,  0.05em 0.05em 0em #24d24f;
     letter-spacing: 8px;
     transition: 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+    .shadow-effect {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .shadow-effect {
+        height: 370px;
+    }
+}
+
+@media screen and (max-width: 500px) {
     .projects-container > h1 {
         font-size: 2.5rem;
+    }
+    
+    .shadow-effect {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .shadow-effect {
+        font-size: 14px;
     }
 }

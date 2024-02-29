@@ -17,7 +17,6 @@
 .education-container {
     position: relative;
     width: 100%;
-    transform: scale(0.9);
 }
 
 #EducationTitle {
@@ -82,7 +81,7 @@
     }
 }
 
-.education{
+.education {
     position: absolute;
     font-size: 14px;
     background: linear-gradient(45deg, #24d24f55, #24df53aa);
@@ -188,8 +187,108 @@
 }
  
 
+@media screen and (max-width: 900px) {
+    
+    #EducationTitle {
+        font-size: 3rem;
+    }
+
+    .howToSvgEdu {
+        text-align: center;
+        top: 42%;
+        right: 30px;
+        font-size: 10px;
+    }
+
+    .education {
+        font-size: 12px;
+    }
+
+    .education h1 {
+        margin: 10px;
+    }
+
+    .education-details {
+        padding: 5px;
+    }
+
+    .education-details p {
+        margin: 5px;
+    } 
+
+    .school10  {
+        top: -25px;
+        right: 3%;
+        opacity: 0;
+        width: 250px;
+        height: 160px;
+    }
+
+    .school12 {
+        top: 37%;
+        left: 3%;
+        opacity: 0;
+        width: 250px;
+        height: 160px;
+    }
+
+    .clg {
+        top: calc(100% - 140px);
+        right: 2%;
+        opacity: 0;
+        width: 300px;
+        height: 180px;
+    }
+}
+
 @media screen and (max-width: 600px) {
+
     #EducationTitle {
         font-size: 2rem;
+    }
+
+    .howToSvgEdu {
+        font-size: 8px;
+    }
+
+    .education {
+        font-size: 10px;
+        width: 200px;
+    }
+
+    .education h1 {
+        margin: 10px;
+    }
+
+    .education-details {
+        padding: 5px;
+    }
+
+    .education-details p {
+        margin: 5px;
+    } 
+
+    .school10  {
+        top: 0%;
+        right: 4%;
+        height: 140px;
+    }
+
+    .school12 {
+        top: 37%;
+        left: 4%;
+        height: 140px;
+    }
+
+    .clg {
+        top: calc(100% - 140px);
+        right: 6%;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .howToSvgEdu {
+        display: none;
     }
 }
