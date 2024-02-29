@@ -61,6 +61,10 @@
 } 
 
 @media screen and (max-width: 1239px) {
+    #navbar {
+        display: none;
+    }
+
     .navbar {
         width: 1000px;
     }
