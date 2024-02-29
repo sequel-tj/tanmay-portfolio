@@ -1,0 +1,29 @@
+#resume {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 10;
+    text-align: center;
+    /* width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #f7f7f7; */
+}
+
+#resume > a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+#resume > a > img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    #resume > a > img {
+        width: 40px;
+    }
+    
+}
