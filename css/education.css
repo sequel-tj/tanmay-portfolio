@@ -3,6 +3,9 @@
     height: 100vh;
     background: black;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .EducationSection > div {
@@ -20,7 +23,7 @@
 }
 
 #EducationTitle {
-    padding-top: 80px;
+    padding: 40px 0;
     position: relative;
     font-size: 4rem;
     color: rgb(255, 255, 255);

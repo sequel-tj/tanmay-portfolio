@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/resume.css">
     <link rel="stylesheet" href="./css/maintenance.css">
+    <link rel="stylesheet" href="./css/navigation-btn.css">
 
     <!-- css animations -->
     <link rel="stylesheet" href="./animations/blink.css">
@@ -36,7 +37,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <link rel="shortcut icon" href="./img/favico/tJ.ico" type="image/x-icon">
 
@@ -44,7 +45,7 @@
 
 <body>
 
-    <section id="navbar">
+    <!-- <section id="navbar">
         <div class="navbar">
             <ul class="navlist">
                 <li><a href="#home">Home</a></li>
@@ -55,7 +56,7 @@
                 <li><a href="#contacts">Contact</a></li>
             </ul>
         </div>
-    </section>
+    </section> -->
 
 
     <section id="home" class="particle-container">
@@ -287,7 +288,7 @@
                             <strong>Branch</strong> - Computer Science Engineering
                         </p>
                         <p id="B.techDetails">
-                            <strong>College</strong> - SRM Institute of Science & Technology, NCR Campus
+                            <strong>College</strong> - SRM Institute of Science & Technology
                         </p>
                     </div>
                 </div>
@@ -572,14 +573,14 @@
             <img src="https://leetcode.com/static/images/LeetCode_logo_rvs.png" alt="leetcode-img">
         </a>
         <a target="_blank" href="https://github.com/sequel-tj">
-            <img src="https://static-00.iconduck.com/assets.00/github-icon-512x497-oppthre2.png" alt="linkedin-img">
+            <img src="img/contact/github.png" alt="github-img">
         </a>
         <a target="_blank" href="mailto: tanmayjaiswal31102002@gmail.com">
             <img src="https://www.pngmart.com/files/16/Gmail-PNG-Transparent-Image.png" alt="gmail-img">
         </a>
     </section>
 
-    <hr>
+    
     <footer id="contacts">
         <p>Copyright © 2024 Tanmay Jaiswal | All rights reserved.</p>
     </footer>
@@ -599,6 +600,9 @@
         </div>
     </section>
 
+    <button id="navigationUpButton" class="navButton navUpBtn material-symbols-outlined">arrow_forward_ios</button>
+    <button id="navigationDownButton" class="navButton navDownBtn material-symbols-outlined">arrow_forward_ios</button>
+
 
     <script src="./js/jquery/jquery.min.js"></script>
     <script src="./js/showOnScroll/showOnScroll.js"></script>
@@ -610,7 +614,15 @@
 
     <script src="./js/education.js"></script>
     <script src="./js/project.js"></script>
+    <script src="./js/navigation-btn.js"></script>
     <!-- <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script> -->
+
+    <script type="text/javaScript">
+        window.onload = function () {
+            var homeSection = document.getElementById("home");
+            homeSection.scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
 
 </body>
 

@@ -1,0 +1,35 @@
+.navButton {
+    position: fixed;
+    right: 20px;
+    z-index: 10;
+    padding: 8px;
+    font-size: 14px !important;
+    border: none;
+    background-color: var(--theme-color);
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.navButton:hover {
+    background-color: var(--theme-color);
+    opacity: 0.9;
+}
+
+.navUpBtn {
+    top: 30px;
+    transform: rotate(-90deg);
+}
+
+.navDownBtn {
+    bottom: 30px;
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 600px) {
+    .navButton {
+        font-size: 12px !important;
+        padding: 5px;
+    }
+}
