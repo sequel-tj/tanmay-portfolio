@@ -20,6 +20,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    /* This is the anchor for absolute elements */
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -37,7 +38,27 @@
     z-index: 10;
 }
 
-/* --- Car Track Container (Preserved) --- */
+/* --- SVG Label (Position Fixed as Absolute) --- */
+.howToSvgEdu {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    text-align: center;
+    z-index: 2;
+    /* Keeps it above the track but below cards */
+}
+
+.howToSvgEdu h2 {
+    color: #00cc33;
+    font-size: 1.1rem;
+}
+
+.howToSvgEdu h3 {
+    color: #aaa;
+    font-size: 0.85rem;
+}
+
+/* --- Car Track Container --- */
 .carTrackContainer {
     width: 100%;
     min-height: 400px;
@@ -69,7 +90,7 @@
     }
 }
 
-/* --- Car Animation (Preserved) --- */
+/* --- Car Animation --- */
 .carEdu {
     offset-path: path('M 39.095 98.106 C 211.336 98.106 418.025 98.106 418.025 178.276 C 418.025 258.446 39.095 218.36 39.095 298.531 C 39.095 378.701 349.129 378.701 452.474 378.701');
 }
@@ -99,7 +120,6 @@
 /* --- Education Cards Styling --- */
 .education {
     position: absolute;
-    /* Absolute for Desktop positions */
     background: rgba(20, 20, 20, 0.85);
     backdrop-filter: blur(12px) saturate(150%);
     -webkit-backdrop-filter: blur(12px) saturate(150%);
@@ -129,7 +149,6 @@
     width: 50px;
 }
 
-/* --- Detail Alignment --- */
 .education-details p {
     margin: 10px 0;
     font-size: 0.75rem;
@@ -153,7 +172,7 @@
     display: inline;
 }
 
-/* --- Desktop Positions --- */
+/* --- Desktop Logic --- */
 @media screen and (min-width: 1025px) {
     .school12 {
         top: 20%;
@@ -172,13 +191,6 @@
         right: 2%;
         animation: educardReveal 0.6s ease-out 1.6s forwards;
     }
-
-    .howToSvgEdu {
-        position: absolute;
-        top: 15%;
-        left: 45%;
-        text-align: center;
-    }
 }
 
 @keyframes educardReveal {
@@ -193,21 +205,20 @@
     }
 }
 
-.howToSvgEdu h2 {
-    color: #00cc33;
-    font-size: 1.1rem;
-}
-
-.howToSvgEdu h3 {
-    color: #aaa;
-    font-size: 0.85rem;
-}
-
-/* --- Mobile Fix: Equal Widths & Flex Alignment --- */
+/* --- Mobile Fix: Equal Widths & Row Layout --- */
 @media screen and (max-width: 1024px) {
     .EducationSection {
         padding: 40px 10px;
         height: auto;
+    }
+
+    /* The SVG Label remains absolute at 15%/45% as requested */
+    .howToSvgEdu {
+        position: absolute !important;
+        top: 15% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%);
+        /* Optional: centers it exactly on the 45% point */
     }
 
     .EducationSection>div {
@@ -215,11 +226,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        /* Centers items in the row */
         gap: 15px;
-        width: 100%;
-        max-width: 800px;
-        /* Constrains the whole block */
     }
 
     .education {
@@ -231,29 +238,17 @@
         transform: none !important;
         animation: none;
         padding: 16px;
-
-        /* EQUAL WIDTH LOGIC */
         flex: 1 1 280px;
-        /* All cards try to be 280px */
         max-width: 320px;
-        /* Limits stretching so they stay compact */
         min-width: 150px;
-        /* Allows side-by-side on small screens */
     }
 
-    /* Schools stay in one row if screen > 350px */
     .school10,
     .school12 {
         flex: 1 1 calc(50% - 15px);
     }
 
-    /* College stays centered and has same max-width as schools */
     .clg {
         flex: 0 1 320px;
-        /* Matches school max-width for uniformity */
-    }
-
-    .education h1 {
-        font-size: 1.1rem;
     }
 }
