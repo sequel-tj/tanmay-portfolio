@@ -62,18 +62,11 @@ class TextScramble {
   // Example
   // ——————————————————————————————————————————————————
   
-  const phrases = [
-    'a Computer Science Student',
-    'a Software Engineer',
-    'a Full Stack Developer',
-    // 'Neo,',
-    // 'sooner or later',
-    // 'you\'re going to realize',
-    // 'just as I did',
-    // 'that there\'s a difference',
-    // 'between knowing the path',
-    // 'and walking the path'
-  ]
+const phrases = [
+    'Software Engineer @ Yubi',
+    'Ruby on Rails Developer', 
+    'Backend Engineer'
+]
   
   const el = document.querySelector('.home-text')
   const fx = new TextScramble(el)

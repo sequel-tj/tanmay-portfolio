@@ -1,50 +1,65 @@
 :root {
-    --theme-color: #00cc33;
-    --font-mont: 'Montserrat', sanserif;
-  }
+  --theme-color: #00cc33;
+  --font-mont: 'Montserrat', sanserif;
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 canvas {
-    display: block;
-} 
-
-body {
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-    background-color: white;
-    height: 100vh;
-    width: 100%;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    overflow: hidden;
+  display: block;
 }
 
-/* width */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-color: white;
+  width: 100%;
+  /* height: 100vh;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden; */
+}
+
+/* 
+#home {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+.matrix-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: all;
+  z-index: 1;
+} */
+
+/* Scrollbar */
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 3px;
-    background-color: #222;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #00cc3388; 
-    border-radius: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #00cc33; 
-  }
+  width: 5px;
+  height: 3px;
+  background-color: #222;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00cc3388;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00cc33;
+}

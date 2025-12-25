@@ -23,5 +23,5 @@ function navigateToPreviousSection() {
     previousSection.scrollIntoView({ behavior: "smooth" });
 }
 
-document.getElementById("navigationUpButton").addEventListener("click", navigateToPreviousSection);
-document.getElementById("navigationDownButton").addEventListener("click", navigateToNextSection);
+// document.getElementById("navigationUpButton").addEventListener("click", navigateToPreviousSection);
+// document.getElementById("navigationDownButton").addEventListener("click", navigateToNextSection);
